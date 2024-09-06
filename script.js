@@ -82,7 +82,7 @@ function createNewRow(data = {}) {
     </td>
     <td class="unit">${importedData[0].unit}</td>
     <td><input class="quantity" type="number" min="1" value="1"></td>
-    <td><button class="remove-row">Eliminar</button></td> `;
+    <td><button class="remove-row btn-delete">Eliminar</button></td> `;
   } else {
     newRow.innerHTML = `
     <td class="item">
@@ -125,6 +125,10 @@ function generateCertificate(e) {
     const itemValue = itemValueElem ? itemValueElem.value : "";
     const unit = unitElem ? unitElem.textContent : "";
     const quantity = quantityElem ? quantityElem.value : "";
+    if (!quantity){
+      alert("Todas las cantidades deben ser mayores a 0.")
+      return;
+    }
 
     return { itemValue, unit, quantity };
   });
@@ -152,6 +156,7 @@ function generateCertificate(e) {
     updateItemsLocalStorage();
 
     window.location.href = "https://esneidercode.github.io/certificationUmtelkomd/certification";
+    //window.location.href = "./certification"
   } else {
     alert(
       "Debe ingresar todos los campos del formulario para poder generar un certificado."
