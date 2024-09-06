@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  background: #fdfbf5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header,
+.header__left {
+  display: flex;
+}
+
+.header__left {
+  flex-direction: column;
+}
+
+header img {
+  height: 50px;
+  margin-bottom: -10px;
+}
+
+header p {
+  color: #1f487c;
+  font-weight: bold;
+}
+
+.certification-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+#certification__description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.certification__date-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.description__container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.description__container span {
+  font-weight: bold;
+}
+
+.signature-section {
+  margin: auto 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-back {
+  background: #4f4545;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn-back:hover {
+  background: rgb(201, 176, 144);
+  color: black;
+}
+
+.signature__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  justify-content: center;
+}
+
+.signature__container img {
+  display: flex;
+  width: 100%;
+  align-self: flex-start;
+  margin-bottom: -20px;
+}
+
+#final__client-signature {
+  position: relative;
+  right: 100px;
+  top: 13px;
+}
+
+@media print {
+  @page {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+
+  .no-print {
+    display: none;
+  }
+}

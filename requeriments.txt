@@ -1,0 +1,11 @@
+1. Al seleccionar el cliente, se despliega un lista con los items disponibles para ese cliente. (ITEM Y UNIDAD NO EDITABLES, VIENEN POR DEFECTO). (INPUT PARA CANTIDAD)
+
+2.  FIRMA DIGITL DEFINIDA PARA UMTELKOMD.
+
+3.  DATEPICKER FOR DATUM.
+
+4. Pattern : 240001X where x is a variable.
+
+5. PERIODO KW INICIO Y FIN ES UN VALOR SEMANAL ( 1 Y 52 ).
+
+6. LISTA DE CLIENTES ES DADA POR UMTELKOMD Y LA LIST ADE ITEMS PAR ACADA CLIENTE.

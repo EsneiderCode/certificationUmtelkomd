@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Rechnung 2024/00064</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="header__left">
+                    <img src="../images/logo.png" alt="logo" />
+                    <p>Wir verbinden dich!</p>
+                </div>
+
+                <div class="header__right">
+                    <p>ARBEITSBESCHEINIGUNG</p>
+                </div>
+            </header>
+
+            <div class="certification-form">
+                <section id="certification__description">
+                    <div class="certification__date-container">
+                        <div class="description__container">
+                            <span>Datum: </span>
+                            <p id="date">12.01.2024</p>
+                        </div>
+                        <div
+                            class="description__container description__container-client">
+                            <span>Kunde: </span>
+                            <p id="client">Client1</p>
+                        </div>
+                    </div>
+
+                    <div class="description__container">
+                        <span>Referenz: </span>
+                        <p id="reference">210001</p>
+                    </div>
+
+                    <div class="description__container">
+                        <span>Projekt: </span>
+                        <p id="project">Project 1</p>
+                    </div>
+
+                    <div class="description__container">
+                        <span>Zeitraum kw start: </span>
+                        <p id="start__date">1</p>
+                        <span>Ende: </span>
+                        <p id="end__date">32</p>
+                    </div>
+                </section>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Artikel</th>
+                            <th>Einheit</th>
+                            <th>Menge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item">item1</td>
+                            <td class="unit">unit1</td>
+                            <td class="quantity">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a
+                    id="btn__back"
+                    class="btn-back no-print"
+                    href="../certificationForm/index.html">Volver al formulario</a>
+            </div>
+
+            <div class="signature-section">
+                <div class="signature__container">
+                    <p>Umtelkomd</p>
+                    <img src="../images/signature.png" alt="signature_umtelkomd" />
+                    <p id="signed__by">Jeisson Andres Romero Lesmes</p>
+                </div>
+                <div class="signature__container client__signature">
+                    <p>Auftraggeber</p>
+                    <img src="../images/signature.png" alt="signature_umtelkomd"
+                        style="visibility: hidden" />
+                    <p id="signed__by" style="visibility: hidden">NOMBRE DEL
+                        CLIENTE</p>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

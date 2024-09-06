@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Rechnung 2024/00064</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="../images/logo.png" alt="logo" />
+                <p>Wir verbinden dich!</p>
+            </header>
+
+            <div class="certification-form">
+                <section id="certification__description">
+                    <div class="certification__date-container">
+                        <div class="input__container">
+                            <label for="date">Datum</label>
+                            <input type="date" name="date" id="date" required />
+                        </div>
+                        <div class="input__container input__container-client">
+                            <label for="client">Kunde</label>
+                            <select required class="input-select" id="client"></select>
+                        </div>
+                    </div>
+
+                    <div class="input__container">
+                        <label for="reference">Referenz</label>
+                        <input id="reference" type="text" value="240001"
+                            required />
+                    </div>
+
+                    <div class="input__container">
+                        <label for="project">Projekt</label>
+                        <input id="project" type="text" required />
+                    </div>
+
+                    <div class="input__container">
+                        <label for="start_week">Zeitraum kw start</label>
+                        <input type="week" id="start_week" required />
+                        <label for="end_week">Ende</label>
+                        <input type="week" id="end_week" required />
+                    </div>
+                </section>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Artikel</th>
+                            <th>Einheit</th>
+                            <th>Menge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="item">
+                                <select class="item-select" required></select>
+                            </td>
+                            <td class="unit">unidad</td>
+                            <td>
+                                <input class="quantity" type="number" min="1"
+                                    value="1" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="addRowButton">Agregar Fila</button>
+
+                <a id="btn__generate" class="btn-generate">Generar certificacion</a>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
