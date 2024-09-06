@@ -151,7 +151,7 @@ function generateCertificate(e) {
 
     updateItemsLocalStorage();
 
-    window.location.href = "../certification";
+    window.location.href = "https://esneidercode.github.io/certificationUmtelkomd/certification";
   } else {
     alert(
       "Debe ingresar todos los campos del formulario para poder generar un certificado."

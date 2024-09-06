@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const tbody = document.querySelector("tbody");
     if (!certificationData){
         alert("No hay informacion para generar una certificacion, seras direccionado al formulario para ingresar los datos necesarios.")
-        window.location.href = "../certificationForm"
+        window.location.href = "https://esneidercode.github.io/certificationUmtelkomd/"
     }
     const dateElement = document.getElementById("date");
     const clientElement = document.getElementById("client");
